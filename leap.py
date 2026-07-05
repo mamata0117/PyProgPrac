@@ -1,13 +1,13 @@
-# year=int(input("Enter a year:"))
-# if (year%400==0) or (year%4==0 and year%100!=0):
-#     print(year,"is a leap year")
-# else:
-#     print(year,"is not a leap year")  
+year=int(input("Enter a year:"))
+if (year%400==0) or (year%4==0 and year%100!=0):
+    print(year,"is a leap year")
+else:
+    print(year,"is not a leap year")  
 # 1qn  
-# length=int(input('Enter length:')) 
-# breadth=int(input('Enter breadth:'))
-# area=length*breadth
-# print('The area of rec is',area)
+length=int(input('Enter length:')) 
+breadth=int(input('Enter breadth:'))
+area=length*breadth
+print('The area of rec is',area)
 # 2qn
 list1=[1,2,3,4,5]
 print('max item:',max(list1))
