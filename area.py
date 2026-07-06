@@ -1,8 +1,8 @@
-'''8. Write a Python program to implement a menu-driven system using Python
-match-case (switch case equivalent) for:
-Area of Circle
-Area of Rectangle
-Area of Triangle'''
+# # '''8. Write a Python program to implement a menu-driven system using Python
+# # match-case (switch case equivalent) for:
+# # Area of Circle
+# Area of Rectangle
+# Area of Triangle'''
 
 Area_shape=input('Enter the shape to calculate area (Circle/Rectangle/Triangle): ').lower()
 match Area_shape:
@@ -22,3 +22,39 @@ match Area_shape:
         print(f'The area of the triangle is: {area}')
     case _:
         print('Invalid shape entered. Please choose Circle, Rectangle, or Triangle.')
+student = {
+    "c": 30,
+    "a": 10,
+    "b": 20
+}
+
+for key in sorted(student):
+    print(key, student[key])
+def find_prime_numbers(n):
+     num = 2
+
+     while num <= n:
+        prime = True
+        i = 2
+
+        while i < num:
+            if num % i == 0:
+                prime = False
+                break
+            i += 1
+
+        if prime:
+            print(num, end=" ")
+
+        num += 1
+
+n = int(input("Enter n: "))
+find_prime_numbers(n)
+count = 10
+
+def increase():
+    global count
+    count += 5
+
+increase()
+print(count)
